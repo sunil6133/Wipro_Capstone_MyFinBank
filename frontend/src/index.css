@@ -1,0 +1,53 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  font-size: 15px;
+}
+
+a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* ── Layout: main content padding ── */
+.layout-main {
+  padding: 40px 48px;
+}
+
+@media (max-width: 1024px) {
+  .layout-main { padding: 32px 32px; }
+}
+
+@media (max-width: 767.98px) {
+  .layout-main { padding: 70px 16px 28px; }
+  html { font-size: 15px; }
+  /* prevent iOS auto-zoom on inputs */
+  input, select, textarea { font-size: 16px !important; }
+}
